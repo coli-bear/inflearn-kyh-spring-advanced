@@ -1,19 +1,20 @@
-package myl.colibear.study.advanced.app.v1;
+package myl.colibear.study.advanced.app.v2;
 
 import lombok.RequiredArgsConstructor;
+import myl.colibear.study.advanced.trace.TraceId;
 import myl.colibear.study.advanced.trace.TraceStatus;
-import myl.colibear.study.advanced.trace.hellotrace.HelloTraceV1;
+import myl.colibear.study.advanced.trace.hellotrace.HelloTraceV2;
 import org.springframework.stereotype.Repository;
 
 @Repository
 @RequiredArgsConstructor
-public class OrderRepositoryV1 {
-    private final HelloTraceV1 trace;
+public class OrderRepositoryV2 {
+    private final HelloTraceV2 trace;
 
-    public void saveOrder(String itemId) {
+    public void saveOrder(TraceId traceId, String itemId) {
         TraceStatus status = null;
         try {
-            status = this.trace.begin("OrderRepository.saveOrder()");
+            status = this.trace.next(traceId, "OrderRepository.saveOrder()");
             if (itemId == null) {
                 throw new IllegalArgumentException("NotNull!!!");
             }
