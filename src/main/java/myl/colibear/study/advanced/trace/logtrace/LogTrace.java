@@ -6,7 +6,7 @@ public interface LogTrace {
     static final String START_PREFIX = "-->";
     static final String COMPLETE_PREFIX = "<--";
     static final String EX_PREFIX = "<X-";
-    TraceStatus begin(String message);
+    TraceStatus begin(String target);
     void end(TraceStatus status);
     void exception(TraceStatus status, Exception e);
 }

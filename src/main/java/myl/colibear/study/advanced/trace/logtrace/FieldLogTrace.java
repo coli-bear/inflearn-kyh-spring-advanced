@@ -3,10 +3,8 @@ package myl.colibear.study.advanced.trace.logtrace;
 import lombok.extern.slf4j.Slf4j;
 import myl.colibear.study.advanced.trace.TraceId;
 import myl.colibear.study.advanced.trace.TraceStatus;
-import org.springframework.stereotype.Component;
 
 @Slf4j
-//@Component
 public class FieldLogTrace implements LogTrace{
 
 
