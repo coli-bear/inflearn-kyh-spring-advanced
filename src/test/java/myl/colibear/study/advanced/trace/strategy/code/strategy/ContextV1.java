@@ -1,4 +1,4 @@
-package myl.colibear.study.advanced.trace.strategy.code;
+package myl.colibear.study.advanced.trace.strategy.code.strategy;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -6,13 +6,17 @@ import lombok.extern.slf4j.Slf4j;
  * 변하지 않는 컨택스트를 처리
  */
 @Slf4j
-public class ContextV2 {
+public class ContextV1 {
+    private final Strategy strategy;
+    public ContextV1(Strategy strategy) {
+        this.strategy = strategy;
+    }
 
-    public void execute(Strategy strategy) {
+    public void execute() {
         long startTime = System.currentTimeMillis();
 
         // 비즈니스 로직 start
-        strategy.call();
+        this.strategy.call();
         // 비즈니스 로직 end
 
         long endTime = System.currentTimeMillis();

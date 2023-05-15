@@ -1,7 +1,6 @@
 package myl.colibear.study.advanced.app.v5;
 
 import lombok.RequiredArgsConstructor;
-import myl.colibear.study.advanced.trace.TraceStatus;
 import myl.colibear.study.advanced.trace.logtrace.LogTrace;
 import myl.colibear.study.advanced.trace.template.AbstractTemplate;
 import org.springframework.stereotype.Repository;

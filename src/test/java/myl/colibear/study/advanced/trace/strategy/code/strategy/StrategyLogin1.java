@@ -1,4 +1,4 @@
-package myl.colibear.study.advanced.trace.strategy.code;
+package myl.colibear.study.advanced.trace.strategy.code.strategy;
 
 import lombok.extern.slf4j.Slf4j;
 

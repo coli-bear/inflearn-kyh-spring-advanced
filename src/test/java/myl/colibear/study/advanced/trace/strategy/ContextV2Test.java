@@ -1,11 +1,9 @@
 package myl.colibear.study.advanced.trace.strategy;
 
 import lombok.extern.slf4j.Slf4j;
-import myl.colibear.study.advanced.trace.strategy.code.ContextV1;
-import myl.colibear.study.advanced.trace.strategy.code.ContextV2;
-import myl.colibear.study.advanced.trace.strategy.code.Strategy;
-import myl.colibear.study.advanced.trace.strategy.code.StrategyLogin1;
-import myl.colibear.study.advanced.trace.strategy.code.StrategyLogin2;
+import myl.colibear.study.advanced.trace.strategy.code.strategy.ContextV2;
+import myl.colibear.study.advanced.trace.strategy.code.strategy.StrategyLogin1;
+import myl.colibear.study.advanced.trace.strategy.code.strategy.StrategyLogin2;
 import org.junit.jupiter.api.Test;
 
 @Slf4j
